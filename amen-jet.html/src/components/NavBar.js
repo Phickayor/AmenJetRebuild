@@ -2,7 +2,7 @@ import React from "react";
 
 function NavBar() {
   return (
-    <div class="sticky h-30 border bg-none">
+    <div class="fixed w-screen h-30 border bg-white">
       <h1 className="absolute p-5 text-3xl font-serif text-blue-500">
         Amen Jet
       </h1>

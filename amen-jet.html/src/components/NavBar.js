@@ -7,11 +7,24 @@ function NavBar() {
         Amen Jet
       </h1>
       <ul className=" hidden inline text-lg lg:flex font-mono justify-center mt-0 space-x-10 p-5">
-        <li>Home</li>
-        <li>Services</li>
-        <li>Gallery</li>
-        <li>Reviews</li>
-        <li>Goals</li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#reviews">Reviews</a>
+        </li>
+        <li>
+          <a href="#goals">Goals</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </div>
   );

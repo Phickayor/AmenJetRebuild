@@ -8,7 +8,7 @@ function Goals() {
       <div className="flex justify-center">
         <div className="border-4 border-blue-500 w-4/5 rounded-full">
           <div className="p-10">
-            <h1 className="font-serif text-4xl text-blue-500">Our Mission</h1>
+            <h1 className="font-serif text-3xl text-blue-500">Our Mission</h1>
             <p className="font-mono text-lg mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
               distinctio asperiores exercitationem dignissimos quidem debitis
@@ -17,7 +17,7 @@ function Goals() {
             </p>
           </div>
           <div className="p-10">
-            <h1 className="font-serif text-4xl text-blue-500">Our Vision</h1>
+            <h1 className="font-serif text-3xl text-blue-500">Our Vision</h1>
             <p className="font-mono text-lg mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
               distinctio asperiores exercitationem dignissimos quidem debitis

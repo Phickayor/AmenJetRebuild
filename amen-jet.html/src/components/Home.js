@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="flex flex-wrap flex-grow top-0">
+    <div id="home" className="flex flex-wrap flex-grow top-0">
       <div className="bg-gray-100 md:order-2 max-h-screen overflow-hidden md:w-1/2 border">
         <img
           className="w-full h-full md:h-fit "

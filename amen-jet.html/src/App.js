@@ -4,7 +4,7 @@ import Services from "./components/Services";
 import Gallery from "./components/Gallery";
 import Reviews from "./components/Reviews";
 import Goals from "./components/Goals";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
 import "./App.css";
 
@@ -19,9 +19,9 @@ function App() {
       <Goals />
       <Gallery />
       <Reviews />
-      {/* <Footer />
       <Contact />
-      */}
+      {/* <Footer />
+       */}
     </div>
   );
 }

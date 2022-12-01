@@ -49,6 +49,7 @@ function Services() {
       <div className="flex justify-center m-10 flex-wrap">
         {services.map((service) => (
           <div
+            key={service.name}
             data-aos="fade-up"
             data-aos-duration="3000"
             className="w-96 m-5 bg-white hover:p-10 shadow-2xl p-5 flex flex-wrap justify-center rounded-3xl"

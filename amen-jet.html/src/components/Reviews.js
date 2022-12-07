@@ -83,6 +83,7 @@ function Reviews() {
         What people say about our services.
       </p>
       <Swiper
+        className="my-0 mx-auto md:w-4/5"
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -96,7 +97,7 @@ function Reviews() {
         {reviews.map((review, index) => (
           <SwiperSlide
             key={index}
-            className="border-blue-500 h-32 min-h-max p-10 border-2 text-center rounded-full shadow-2xl"
+            className="border-blue-500 h-32 min-h-max p-10 border-2 text-center rounded-full"
           >
             <h1 className="text-3xl border-b p-5 border-white rounded-3xl font-serif">
               {review.service}
@@ -106,7 +107,7 @@ function Reviews() {
             <cite className="block m-2">{"~" + review.author}</cite>
           </SwiperSlide>
         ))}
-        <h1 className="mt-5">...</h1>
+        <h1 className="mt-5 opacity-0">...</h1>
       </Swiper>
     </div>
   );

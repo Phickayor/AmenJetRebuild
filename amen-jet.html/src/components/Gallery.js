@@ -2,7 +2,7 @@ import React from "react";
 
 function Gallery() {
   return (
-    <div id="gallery">
+    <div id="gallery" className="mt-20">
       {/* <h1 className="text-4xl font-mono text-blue-500 mt-10">Gallery</h1>
       <p className="text-lg font-mono mb-10">
         Relive the moments with us. Memories lasts forever.

@@ -40,19 +40,19 @@ function Services() {
     }
   ];
   return (
-    <div id="services">
+    <div id="services" className="mx-auto my-0 w-4/5 ">
       <h1 className="text-4xl font-mono text-blue-500">Services</h1>
       <p className="text-lg font-mono">
         The things we do to bring smiles to the community
       </p>
 
-      <div className="flex justify-center m-10 flex-wrap">
+      <div className="flex justify-between mt-10 w-full  flex-wrap">
         {services.map((service) => (
           <div
             key={service.name}
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="w-96 m-5 bg-white hover:p-10 shadow-2xl p-5 flex flex-wrap justify-center rounded-3xl"
+            className="w-96 bg-white m-2 hover:p-10 shadow-2xl p-5 rounded-3xl"
           >
             <img
               src={service.image}

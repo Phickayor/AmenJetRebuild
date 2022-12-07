@@ -77,8 +77,8 @@ function Reviews() {
     }
   ];
   return (
-    <>
-      <h1 className="text-4xl font-mono text-blue-500 mt-10">Reviews</h1>
+    <div id="reviews" className="mt-20">
+      <h1 className="text-4xl font-mono text-blue-500 ">Reviews</h1>
       <p className="text-lg font-mono mb-10">
         What people say about our services.
       </p>
@@ -108,7 +108,7 @@ function Reviews() {
         ))}
         <h1 className="mt-5">...</h1>
       </Swiper>
-    </>
+    </div>
   );
 }
 export default Reviews;

@@ -20,7 +20,7 @@ function Home() {
         </button>
       </div>
       <svg
-        className="order-3"
+        className="order-3 w-full"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >

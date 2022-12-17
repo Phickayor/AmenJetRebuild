@@ -13,13 +13,13 @@ function Gallery() {
       >
         <img
           style={{ height: "35rem" }}
-          className="w-fit rounded-3xl opacity-40"
+          className="w-full rounded-3xl opacity-40"
           src="https://images.pexels.com/photos/6129207/pexels-photo-6129207.jpeg?auto=compress&cs=tinysrgb&w=2000"
           alt="Gallery-Background"
         />
         <div
           style={{ height: "35rem" }}
-          className="absolute border flex justify-center text-white flex-col w-full "
+          className="absolute  flex justify-center text-white flex-col w-full "
         >
           <h1 className="text-5xl m-2 text-blue-200">Amen Jet Gallery</h1>
           <p className="text-lg font-mono mb-5">

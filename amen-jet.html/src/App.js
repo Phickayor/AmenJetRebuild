@@ -5,7 +5,7 @@ import Gallery from "./components/Gallery";
 import Reviews from "./components/Reviews";
 import Goals from "./components/Goals";
 import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import "./App.css";
 import Faqs from "./components/Faqs";
 
@@ -22,7 +22,7 @@ function App() {
       <Reviews />
       <Contact />
       <Faqs />
-      {/* <Footer />*/}
+      <Footer />
     </div>
   );
 }

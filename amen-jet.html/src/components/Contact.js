@@ -34,7 +34,7 @@ function Contact() {
             placeholder="Drop your message here..."
             required
           />
-          <button className="lg:w-2/4 m-5 w-9/12 bg-white text-black text-center focus:outline-none text-2xl shadow-2xl p-5 font-mono rounded-3xl border-4 border-black hover:bg-blue-700 hover:text-white hover:lg:w-9/12">
+          <button className="lg:w-2/4 m-5 w-9/12 bg-white text-black text-center focus:outline-none text-2xl shadow-2xl p-5 font-mono rounded-3xl border-4 border-black hover:bg-blue-500 hover:text-white hover:lg:w-9/12 font-semibold">
             Submit
           </button>
         </form>

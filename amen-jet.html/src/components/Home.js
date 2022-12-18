@@ -15,7 +15,7 @@ function Home() {
         <p className="font-mono p-5 text-lg ">
           Bringing quality health care to your door step.
         </p>
-        <button className="border p-10 text-white text-xl w-80 self-center bg-blue-500 rounded-3xl">
+        <button className="font-semibold border p-10 text-white text-xl w-80 self-center bg-blue-500 rounded-3xl">
           Book Appointment
         </button>
       </div>

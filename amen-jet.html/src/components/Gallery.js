@@ -19,14 +19,14 @@ function Gallery() {
         />
         <div
           style={{ height: "35rem" }}
-          className="absolute  flex justify-center text-white flex-col w-full "
+          className="absolute flex justify-center text-white flex-col w-full "
         >
           <h1 className="text-5xl m-2 text-blue-200">Amen Jet Gallery</h1>
           <p className="text-lg font-mono mb-5">
             Take a journey with us to visit our memories one after the other.
           </p>
           <a href="https://amenjet.pixieset.com/amenjetgallery">
-            <button className="border-2 p-5 rounded-3xl hover:border-blue-500 hover:w-1/2">
+            <button className=" font-semibold p-5 rounded-3xl bg-blue-500 w-1/2 hover:w-full">
               View Gallery
             </button>
           </a>

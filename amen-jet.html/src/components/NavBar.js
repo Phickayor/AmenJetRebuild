@@ -3,13 +3,12 @@ import React from "react";
 function NavBar() {
   return (
     <div
-      style={{ zIndex: 10, backdropFilter: "blur(1.094rem)" }}
-      className="fixed w-screen h-30 border-b flex"
+      className="sticky top-0 left-0 h-30 border-b flex z-30 justify-between backdrop-blur px-20"
     >
-      <h1 className=" lg:w-1/4  text-3xl font-serif p-5 text-blue-500">
+      <h1 className=" text-4xl font-serif p-5 text-blue-500 font-semibold">
         Amen Jet
       </h1>
-      <ul className="hidden w-2/4 lg:flex  text-lg font-mono justify-center mt-0 space-x-10 p-5">
+      <ul className="hidden lg:flex  text-lg lg:text-xl font-mono justify-center mt-0 space-x-10 p-5">
         <li className="hover:border-b-4 hover:border-blue-500">
           <a href="#home">Home</a>
         </li>

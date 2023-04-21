@@ -1,115 +1,80 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Reviews() {
-  const [slideNumber, setSlideNumber] = useState(1);
-
-  function slidesNumber() {
-    if (window.innerWidth >= 1024) {
-      setSlideNumber(3);
-    } else if (window.innerWidth >= 600) {
-      setSlideNumber(2);
-    } else {
-      setSlideNumber(1);
-    }
-  }
-
-  // create an event listener
-  useEffect(() => {
-    window.addEventListener("load", slidesNumber);
-    window.addEventListener("resize", slidesNumber);
-  });
-  const reviews = [
-    {
-      service: "Mobile Nursing",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    },
-    {
-      service: "Home Embambling",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    },
-    {
-      service: "Mental Nursing",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    },
-    {
-      service: "Mobile Nursing",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    },
-    {
-      service: "Home Embambling",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    },
-    {
-      service: "Mental Nursing",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    },
-    {
-      service: "Mobile Nursing",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    },
-    {
-      service: "Home Embambling",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    },
-    {
-      service: "Mental Nursing",
-      review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      author: "Fikayo Jetawo"
-    }
-  ];
+  const left = <FontAwesomeIcon icon={faArrowLeft} className="text-4xl p-2.5" />
+  const right = <FontAwesomeIcon icon={faArrowRight} className="text-4xl p-2.5 text-white" />
   return (
-    <div id="reviews" className="mt-20">
-      <h1 className="text-4xl font-mono text-blue-500 ">Reviews</h1>
-      <p className="text-lg font-mono mb-10">
-        What people say about our services.
-      </p>
-      <Swiper
-        className="my-0 mx-auto md:w-4/5"
-        // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={slideNumber}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        {reviews.map((review, index) => (
-          <SwiperSlide
-            key={index}
-            className="border-blue-500 h-32 min-h-max p-10 border-2 text-center rounded-full"
-          >
-            <h1 className="text-3xl border-b p-5 border-white rounded-3xl font-serif">
-              {review.service}
-            </h1>
-            <q className="text-lg font-mono w-full">{review.review}</q>
-            <br />
-            <cite className="block m-2">{"~" + review.author}</cite>
-          </SwiperSlide>
-        ))}
-        <h1 className="mt-5 opacity-0">...</h1>
-      </Swiper>
+    <div className='mx-auto lg:w-9/12 py-10'>
+      <div className='font-rubik text-headingfont px-10 my-5 space-y-5'>
+        <p className='bg-secondary1 inline px-2 py-1 border-l-4 border-primary1'>Testimonials</p>
+        <div className='lg:flex justify-between'>
+          <h1 className='text-3xl lg:text-4xl font-semibold py-2 '>What Our Customers Say</h1>
+          <div className="flex space-x-10 justify-center">
+            <div className='rounded-full w-14 h-14 bg-primary1'>{left}</div>
+            <div className='rounded-full w-14 h-14 bg-gray-800'>{right}</div>
+          </div>
+        </div>
+      </div>
+      <div className='flex pt-10 pb-20 w-11/12 mx-auto'>
+        <div className='lg:w-1/2 bg-secondary1 p-10 w-full rounded-3xl lg:rounded-r-none'>
+          <div className='flex justify-between'>
+            <div className='flex space-x-2'>
+              <img src="/assets/whiteMan.png" alt="" className='rounded-full' />
+              <div className='self-center'>
+                <h3 className='font-semibold font-headingfont font-rubik text-xl'>Kathleen Smith</h3>
+                <p className='font-normal font-paragraphfont font-krub text-lg'>Fuel Company</p>
+              </div>
+            </div>
+            <img src='/assets/quote.png' className='self-center bg-primary1 rounded-full py-6 px-4' alt='""' />
+
+          </div>
+          <p className='py-4 text-lg font-krub'>
+            Leverage agile frameworks to provide a robust synopsis for strategy
+            foster collaborative thinking to further the overall value proposition.
+            Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+          </p>
+          <div className='flex pt-5 space-x-2 justify-center'>
+            <img src="/assets/Star.png" alt='star' />
+            <img src="/assets/Star.png" alt='star' />
+            <img src="/assets/Star.png" alt='star' />
+            <img src="/assets/Star.png" alt='star' />
+            <img src="/assets/Star.png" alt='star' />
+          </div>
+
+        </div>
+
+        <div className='hidden lg:block w-1/2 bg-primary2 text-secondary1 p-10 rounded-3xl lg:rounded-l-none'>
+          <div className='flex justify-between'>
+            <div className='flex space-x-2'>
+              <img src="/assets/fairMan.png" alt="" className='rounded-full' />
+              <div className='self-center'>
+                <h3 className='font-semibold font-headingfont font-rubik text-xl'>John Martin</h3>
+                <p className='font-normal font-paragraphfont font-krub text-lg'>Restoration Company</p>
+              </div>
+            </div>
+            <img src='/assets/quote.png' className='self-center bg-primary1 rounded-full py-6 px-4' alt='""' />
+
+          </div>
+          <p className='py-4 text-lg font-krub'>
+            Leverage agile frameworks to provide a robust synopsis for strategy
+            foster collaborative thinking to further the overall value proposition.
+            Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+          </p>
+
+          <div className='flex pt-5 space-x-2 justify-center'>
+            <img src="/assets/Star.png" alt='star' />
+            <img src="/assets/Star.png" alt='star' />
+            <img src="/assets/Star.png" alt='star' />
+            <img src="/assets/Star.png" alt='star' />
+            <img src="/assets/Star.png" alt='star' />
+          </div>
+        </div>
+      </div>
+
     </div>
-  );
+  )
 }
-export default Reviews;
+
+export default Reviews

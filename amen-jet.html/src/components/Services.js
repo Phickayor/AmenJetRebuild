@@ -1,70 +1,48 @@
 import React from "react";
+import services from "../utils/services.json"
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 function Services() {
-  const services = [
-    {
-      image:
-        "https://images.pexels.com/photos/6382633/pexels-photo-6382633.jpeg?auto=compress&cs=tinysrgb&w=2000",
-      name: "Mental Nursing",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/6382633/pexels-photo-6382633.jpeg?auto=compress&cs=tinysrgb&w=2000",
-      name: "Mobile Nursing",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/6382633/pexels-photo-6382633.jpeg?auto=compress&cs=tinysrgb&w=2000",
-      name: "Home Embambling",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/6753471/pexels-photo-6753471.jpeg?auto=compress&cs=tinysrgb&w=2000",
-      name: "Ambulance Services",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/6753471/pexels-photo-6753471.jpeg?auto=compress&cs=tinysrgb&w=2000",
-      name: "Geriatric Nursing",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=2000",
-      name: "Recruitment of registered nurses",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-    }
-  ];
   return (
-    <div id="services" className="mx-auto my-0 lg:w-4/5">
-      <h1 className="text-4xl font-mono text-blue-500">Services</h1>
-      <p className="text-lg font-mono">
-        The things we do to bring smiles to the community
-      </p>
+    <div id="goals" className="py-10 md:w-5/6 mx-auto">
+      <div className='font-rubik text-headingfont md:px-10 px-5 my-5'>
+        <p className='bg-secondary1 inline px-2 py-1 border-l-4 border-primary1'>Our Services</p>
+        <h1 className='text-4xl font-semibold py-4'>Who we are, What we do</h1>
+      </div>
 
-      <div className="flex lg:justify-between justify-center mt-10 w-full  flex-wrap">
-        {services.map((service) => (
-          <div
-            key={service.name}
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className="w-96 bg-white m-2 hover:p-10 shadow-2xl p-5 rounded-3xl"
+      <div className="bg-secondary1 md:rounded-3xl">
+        <div className='md:my-10 my-5'>
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            // navigation
+            pagination={{ clickable: true }}
           >
-            <img
-              src={service.image}
-              alt={service.name + "image"}
-              className="rounded-3xl h-52 w-full"
-            />
-            <h1 className="text-4xl text-blue-500 font-serif w-full">
-              {service.name}
-            </h1>
-            <p className="text-lg font-mono w-full">{service.desc}</p>
-          </div>
-        ))}
+            {services.map((service) => (
+              <SwiperSlide key={service.name}>
+                <div className=' mx-auto md:flex block'>
+                  <div className='md:w-1/2 self-center order-2 text-left space-y-8  p-5'>
+                    <h1 className="text-4xl font-semibold font-rubik text-blue-500">{service.name}</h1>
+                    <p className='text-2xl font-krub '>{service.desc}</p>
+                  </div>
+                  <div className='md:w-1/2 order-1 h-max px-4 md:px-0'>
+                    <img className=" h-auto max-w-full rounded-l-3xl md:rounded-r-none rounded-3xl" src={service.image} alt="" />
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,8 @@ module.exports = {
         primary2: '#091242',
         secondary1: '#F4F4F4',
         paragraphfont: '#666C89',
-        paleColor: 'rgba(232, 232, 232, 0.5)'
+        paleColor: 'rgba(232, 232, 232, 0.5)',
+        circle: '#1F2A69'
       },
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],

@@ -10,46 +10,46 @@ function Gallery() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="grid gap-2">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/hero.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/hero.jpg" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/home.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/home.jpg" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image2.jpg" alt="" />
-          </div>
-        </div>
-        <div className="grid gap-2">
-          <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image3.jpg" alt="" />
-          </div>
-          <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image4.jpg" alt="" />
-          </div>
-          <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image5.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image2.jpg" alt="" />
           </div>
         </div>
         <div className="grid gap-2">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image6.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image3.jpg" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image7.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image4.jpg" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image8.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image5.jpg" alt="" />
           </div>
         </div>
-        <div className="grid gap-2">
+        <div className="hidden md:grid gap-2">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image9.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image6.jpg" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image1.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image7.jpg" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/assets/Amen Jet/image10.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image8.jpg" alt="" />
+          </div>
+        </div>
+        <div className="hidden md:grid gap-2">
+          <div>
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image9.jpg" alt="" />
+          </div>
+          <div>
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image1.jpg" alt="" />
+          </div>
+          <div>
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/assets/Amen Jet/image10.jpg" alt="" />
           </div>
         </div>
       </div>

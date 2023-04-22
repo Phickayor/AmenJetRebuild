@@ -6,7 +6,7 @@ function Contact() {
   const email = <FontAwesomeIcon icon={faEnvelope} className="text-primary1 text-2xl p-4" />
   const phone = <FontAwesomeIcon icon={faPhone} className="text-primary1 text-2xl p-4" />
   return (
-    <div className='bg-primary2 py-5 text-white'>
+    <div id="contact" className='target:pt-20 bg-primary2 py-10 text-white'>
       <div className='block lg:flex gap-10 w-11/12 mx-auto'>
 
         <div className='font-rubik'>

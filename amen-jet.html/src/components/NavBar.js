@@ -9,24 +9,36 @@ function NavBar() {
         Amen Jet
       </h1>
       <ul className="hidden lg:flex font-krub  text-2xl justify-center mt-0 space-x-10 p-5">
-        <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
-          <a href="#home">Home</a>
-        </li>
-        <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
-          <a href="#services">Services</a>
-        </li>
-        <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
-          <a href="#gallery">Gallery</a>
-        </li>
-        <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
-          <a href="#reviews">Reviews</a>
-        </li>
-        <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
-          <a href="#about">About Us</a>
-        </li>
-        <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
-          <a href="#contact">Contact</a>
-        </li>
+        <a href="/">
+          <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
+            Home
+          </li>
+        </a>
+        <a href="#services">
+          <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
+            Services
+          </li>
+        </a>
+        <a href="#gallery">
+          <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
+            Gallery
+          </li>
+        </a>
+        <a href="#reviews">
+          <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
+            Reviews
+          </li>
+        </a>
+        <a href="#about">
+          <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
+            About Us
+          </li>
+        </a>
+        <a href="#contact">
+          <li className="hover:bg-primary2 p-2 hover:text-white rounded-lg">
+            Contact
+          </li>
+        </a>
       </ul>
     </div>
   );

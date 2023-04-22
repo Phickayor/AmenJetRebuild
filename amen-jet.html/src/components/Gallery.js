@@ -2,7 +2,7 @@ import React from "react";
 
 function Gallery() {
   return (
-    <div className="w-10/12 mx-auto py-10">
+    <div id="gallery" className="w-10/12 mx-auto py-10">
       <div className='font-rubik text-headingfont px-10 my-5'>
         <p className='bg-secondary1 inline px-2 py-1 border-l-4 border-primary1'>Our Gallery</p>
         <h1 className='text-4xl font-semibold py-4'>With every <b className="text-blue-500 font-semibold">Click</b>, a <b className="font-semibold text-blue-500">Story</b> to tell</h1>

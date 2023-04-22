@@ -6,7 +6,7 @@ function Reviews() {
   const left = <FontAwesomeIcon icon={faArrowLeft} className="text-4xl p-2.5" />
   const right = <FontAwesomeIcon icon={faArrowRight} className="text-4xl p-2.5 text-white" />
   return (
-    <div className='mx-auto lg:w-9/12 py-10'>
+    <div id='reviews' className='mx-auto lg:w-9/12 py-10'>
       <div className='font-rubik text-headingfont px-10 my-5 space-y-5'>
         <p className='bg-secondary1 inline px-2 py-1 border-l-4 border-primary1'>Testimonials</p>
         <div className='lg:flex justify-between'>

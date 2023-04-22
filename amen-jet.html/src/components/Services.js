@@ -12,7 +12,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 function Services() {
   return (
-    <div id="goals" className="py-10 md:w-5/6 mx-auto">
+    <div id="services" className=" py-10 md:w-5/6 mx-auto">
       <div className='font-rubik text-headingfont md:px-10 px-5 my-5'>
         <p className='bg-secondary1 inline px-2 py-1 border-l-4 border-primary1'>Our Services</p>
         <h1 className='text-4xl font-semibold py-4'>Who we are, What we do</h1>

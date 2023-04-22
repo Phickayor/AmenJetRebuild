@@ -17,10 +17,10 @@ function App() {
       <Services />
       <Gallery />
       <Reviews />
+      <Contact />
       <Footer />
       {/*
       <About />
-      <Contact />
       <Faqs /> */}
     </div >
   );

@@ -1,69 +1,53 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 function Contact() {
-  const whatsapp = <FontAwesomeIcon icon={faWhatsapp} />;
-  const instagram = <FontAwesomeIcon icon={faInstagram} />;
-  const mail = <FontAwesomeIcon icon={faEnvelope} />;
-  const phone = <FontAwesomeIcon icon={faPhone} />;
+  const email = <FontAwesomeIcon icon={faEnvelope} className="text-primary1 text-2xl p-4" />
+  const phone = <FontAwesomeIcon icon={faPhone} className="text-primary1 text-2xl p-4" />
   return (
-    <div id="contact" className="mt-20">
-      <div className="mx-auto my-0 w-4/5">
-        <h1 className="text-4xl font-mono  text-blue-500">Contact</h1>
-        <p className="text-lg font-mono mb-10">You can reach us </p>
-      </div>
+    <div className='bg-primary2 py-5 text-white'>
+      <div className='block lg:flex gap-10 w-11/12 mx-auto'>
 
-      <div className="my-0 mx-auto w-4/5 flex flex-wrap md:flex-nowrap justify-center">
-        <form className=" bg-white text-black w-full shadow-2xl p-5 rounded-3xl border-blue-500 border-4">
-          <label className="p-5 font-mono text-3xl">E-mail</label>
-          <br />
-          <input
-            type="email"
-            className="w-9/12 m-5 bg-white font-serif text-black text-center focus:outline-none text-2xl shadow-2xl p-5 rounded-3xl border-4 border-black"
-            placeholder="Your Mail..."
-            required
-          />
-          <br />
-          <label className="p-5 font-mono text-3xl">Message</label>
-          <br />
-          <textarea
-            type="text"
-            className="w-9/12 m-5 bg-white font-serif text-black text-center focus:outline-none text-2xl shadow-2xl p-5 rounded-3xl border-4 border-black"
-            placeholder="Drop your message here..."
-            required
-          />
-          <button className="lg:w-2/4 m-5 w-9/12 bg-white text-black text-center focus:outline-none text-2xl shadow-2xl p-5 font-mono rounded-3xl border-4 border-black hover:bg-blue-500 hover:text-white hover:lg:w-9/12 font-semibold">
-            Submit
-          </button>
+        <div className='font-rubik'>
+          <p className='bg-secondary1 text-headingfont inline px-2 py-1 border-l-4 border-primary1'>What We Do</p>
+          <h1 className='text-4xl font-rubik lg:text-5xl my-4 font-semibold'>Get in touch with us</h1>
+          <p className='font-krub text-lg lg:text-xl'>
+            Leverage agile frameworks to provide a robust synopsis
+            for strategy foster collaborative
+            thinking to further the overall value.
+          </p>
+          <ul className=' my-5 block space-y-5  '>
+
+            <li className="flex space-x-2 justify-center  ">
+              <h1 className='rounded-full w-14 h-14 bg-[#273270]'>{email}</h1>
+              <div className='self-center'>
+                amenjet@gmail.com
+              </div>
+            </li>
+            <li className="flex space-x-2 justify-center">
+              <h1 className='rounded-full w-14 h-14 bg-[#273270]'>{phone}</h1>
+              <div className='self-center'>
+                (+234) 902 530 3318
+              </div>
+            </li>
+          </ul>
+        </div>
+        <form className='w-full my-10 space-y-8 font-poppins '>
+          <div className='flex space-x-5'>
+            <input type="text" placeholder="Your name*" className='bg-inherit border rounded-lg px-5 p-3 w-1/2' />
+            <input type="text" placeholder="Email*" className='bg-inherit border px-5 rounded-lg  p-3 w-1/2' />
+          </div>
+          <div className='flex space-x-5'>
+            <input type="text" placeholder="Phone Number*" className='bg-inherit border rounded-lg  px-5 p-3 w-1/2' />
+            <input type="text" placeholder="City*" className='bg-inherit border rounded-lg  px-5 p-3 w-1/2' />
+          </div>
+          <textarea className='bg-inherit border px-5 rounded-lg p-4 w-full h-40' placeholder='Your Message*' />
+          <button className="px-10 py-4 text-primary2 font-semibold bg-gradient-to-r from-[#FFB629] via-[#FFDA56] to-[#FFD7A6]">Submit Message</button>
         </form>
-
-        <ul className="  bg-white m-5 text-black rounded-2xl flex justify-center md:flex-col border-4 border-blue-500">
-          <a href="https://wa.me/+2348056505476">
-            <li className="text-5xl sm:text-6xl m-5 hover:text-blue-500">
-              {whatsapp}
-            </li>
-          </a>
-          <a href=".">
-            <li className="text-5xl sm:text-6xl m-5 hover:text-blue-500">
-              {instagram}
-            </li>
-          </a>
-          <a href="tel:+2349025303318">
-            <li className="text-4xl sm:text-5xl m-5 hover:text-blue-500">
-              {phone}
-            </li>
-          </a>
-          <a href="mailto:jetawotemitope@gmail@gmail.com">
-            <li className="text-4xl sm:text-5xl m-5 hover:text-blue-500">
-              {mail}
-            </li>
-          </a>
-        </ul>
       </div>
     </div>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

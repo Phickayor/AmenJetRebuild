@@ -54,7 +54,7 @@ function Gallery() {
         </div>
       </div>
       <a href="https://amenjet.pixieset.com/amenjetgallery/">
-        <button className="btns my-5">Show More</button>
+        <button className="btns z-10 my-5">Show More</button>
       </a>
     </div>
 

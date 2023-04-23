@@ -7,17 +7,17 @@ function Reviews() {
   const right = <FontAwesomeIcon icon={faArrowRight} className="text-4xl p-2.5 text-white" />
   return (
     <div id='reviews' className='mx-auto lg:w-9/12 py-10'>
-      <div className='font-rubik text-headingfont px-10 my-5 space-y-5'>
+      <div className='font-rubik text-headingfont px-2 md:px-10 my-5 space-y-5'>
         <p className='bg-secondary1 inline px-2 py-1 border-l-4 border-primary1'>Testimonials</p>
         <div className='lg:flex justify-between'>
           <h1 className='text-3xl lg:text-4xl font-semibold py-2 '>What Our Customers Say</h1>
           <div className="flex space-x-10 justify-center">
-            <div className='rounded-full w-14 h-14 bg-primary1'>{left}</div>
-            <div className='rounded-full w-14 h-14 bg-gray-800'>{right}</div>
+            <div className='rounded-full w-14 h-14 bg-primary1 self-center'>{left}</div>
+            <div className='rounded-full w-14 h-14 bg-gray-800 self-center'>{right}</div>
           </div>
         </div>
       </div>
-      <div className='flex pt-10 pb-20 w-11/12 mx-auto'>
+      <div className='flex md:pt-10 pt-5 md:pb-20 pb-10 w-11/12 mx-auto'>
         <div className='lg:w-1/2 bg-secondary1 p-10 w-full rounded-3xl lg:rounded-r-none'>
           <div className='flex justify-between'>
             <div className='flex space-x-2'>

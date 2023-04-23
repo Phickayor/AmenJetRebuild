@@ -13,9 +13,9 @@ import 'swiper/css/scrollbar'
 function Services() {
   return (
     <div id="services" className=" py-10 md:w-5/6 mx-auto">
-      <div className='font-rubik text-headingfont md:px-10 px-5 my-5'>
+      <div className='font-rubik text-headingfont md:px-10 px-3 md:px-5 my-5'>
         <p className='bg-secondary1 inline px-2 py-1 border-l-4 border-primary1'>Our Services</p>
-        <h1 className='text-4xl font-semibold py-4'>Who we are, What we do</h1>
+        <h1 className='md:text-4xl text-3xl font-semibold py-4'>Who we are, What we do</h1>
       </div>
 
       <div className="bg-secondary1 md:rounded-3xl">
@@ -32,8 +32,8 @@ function Services() {
               <SwiperSlide key={service.name}>
                 <div className=' mx-auto md:flex block'>
                   <div className='md:w-1/2 self-center order-2 text-left space-y-8  p-5'>
-                    <h1 className="text-4xl font-semibold font-rubik text-blue-500">{service.name}</h1>
-                    <p className='text-2xl font-krub '>{service.desc}</p>
+                    <h1 className="text-3xl md:text-4xl font-semibold font-rubik text-blue-500">{service.name}</h1>
+                    <p className='text-xl md:text-2xl font-krub '>{service.desc}</p>
                   </div>
                   <div className='md:w-1/2 order-1 h-max px-4 md:px-0'>
                     <img className=" h-auto max-w-full rounded-l-3xl md:rounded-r-none rounded-3xl" src={service.image} alt="" />

@@ -11,7 +11,7 @@ function Contact() {
 
         <div className='font-rubik'>
           <p className='bg-secondary1 text-headingfont inline px-2 py-1 border-l-4 border-primary1'>What We Do</p>
-          <h1 className='text-4xl font-rubik lg:text-5xl my-4 font-semibold'>Get in touch with us</h1>
+          <h1 className='text-3xl md:text-4xl font-rubik lg:text-5xl my-4 font-semibold'>Get in touch with us</h1>
           <p className='font-krub text-lg lg:text-xl'>
             Leverage agile frameworks to provide a robust synopsis
             for strategy foster collaborative

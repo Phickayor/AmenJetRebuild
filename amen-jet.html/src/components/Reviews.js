@@ -81,7 +81,6 @@ function Reviews() {
         <div className='w-1/2 bg-primary2 text-secondary1 p-10 rounded-3xl md:rounded-l-none'>
           <div className='flex justify-between'>
             <div className='flex space-x-2'>
-              <img src="/assets/fairMan.png" alt="" className='rounded-full' />
               <div className='self-center'>
                 <h3 className='font-semibold font-headingfont font-rubik text-xl'>John Martin</h3>
                 <p className='font-normal font-paragraphfont font-krub text-lg'>Restoration Company</p>
@@ -107,7 +106,6 @@ function Reviews() {
       <div className={`md:hidden ${bgColor} ${textColor} p-10 mx-auto w-11/12 rounded-3xl`}>
         <div className='flex justify-between'>
           <div className='flex space-x-2'>
-            <img src="/assets/whiteMan.png" alt="" className='rounded-full' />
             <div className='self-center'>
               <h3 className='font-semibold font-headingfont font-rubik text-xl'>{reviews[currentPosition].name}</h3>
               <p className='font-normal font-paragraphfont font-krub text-lg'>{reviews[currentPosition].service}</p>
